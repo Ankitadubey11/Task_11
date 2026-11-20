@@ -9,23 +9,34 @@
 </head>
 <body>
 
-    <div class="gallery">
-        <h1>My Image Gallery</h1>
+    <div class="gallery-container">
 
-        <div class="image-container">
-            <img id="galleryImage"
-            src="https://picsum.photos/id/10/600/400"
-            alt="Gallery Image">
+        <h2>My Image Gallery</h2>
+
+        <div class="gallery">
+
+            <img id="galleryImage" src="" alt="Gallery Image">
+
+            <h4 id="caption">Mango</h4>
+
+            <p id="imageNumber">Image 1 of 4</p>
+
+            <div class="buttons">
+                <button onclick="previousImage()">Previous</button>
+                <button onclick="nextImage()">Next</button>
+            </div>
+
+            <button id="slideshowBtn" onclick="toggleSlideshow()">
+                Play Slideshow
+            </button>
+
+            <div class="dots" id="dots"></div>
+
         </div>
 
-        <p id="imageNumber">Image 1 of 4</p>
-
-        <div class="buttons">
-            <button onclick="previousImage()">Previous</button>
-            <button onclick="nextImage()">Next</button>
-        </div>
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
